@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+/* 「css基本の設定」（--は変数。一括で変えることができるため効率的なコード。）*/
+:root{--primary-color:#4f46e5;   
+      --primar-light:#818cf8;
+      --text-color:#333333;
+      --bg-light:#8fafc;
+      --bg-white:#ffffff;
+      --bg-dark:#0f172a;
+      --transition:all 0.3s ease;}
+
+/* 「*の記号は、ユニバーサルセレクタ」画面にあるすべての計算方法を統一する魔法のコード*/
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;}      
+
+html{scroll-behavior: smooth;} /*メニューをクリックしたときにスムーズにスクロールするよ*/
+body{font-family: 'Montserrat','NOte Sans JP',sans-serif;
+     color: var(--text-color);
+     line-height: 1.6;
+     background-color: var(--bg-white);}
+
+/*共通パーツ*/
+.container{max-width: 1000px;
+           margin: 0 auto;
+           padding: 0 20px;}
+.section{padding: 80px 0;}
+.bg-light{background-color: var(--bg-light);}
+.bg-dark{background-color: var(--bg-dark);}
+.section-title{font-size: 28px;
+               text-align: center;
+               margin-bottom: 50px;
+               position:relative;
+               font-weight: 700;}
+
+/*見出しの下におくおしゃれなアンダーライン（border-botton(下線)でなくタイトルより短い線を引いているよ）*/
+.section-title::after{content: '';
+                      position: absolute;
+                      bottom: -10px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 60px;
+                      height: 4px;
+                      background-color: var(--primary-color);
+                      border-radius: 2px}
+
+.text-white{color:var(--bg-white);}
+.text-center{text-align: center;}
+
+/*各パーツのスタイル*/
+.header{background-color: rgba(255, 255, 255, 0.9);
+        position: fixed;/*上部に固定する*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0,0, 0.05);
+        backdrop-filter: blur(5px);/*背景少しぼかす*/}
+.header-container{display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding: 15px 20px;}
+.logo{font-size: 20px;
+      font-weight: 700;
+       color: var(--primary-color);}
+.nav{display: flex;
+     gap: 20px;}
+.nav-link{text-decoration: none;
+          color: var(--text-color);
+          font-weight: 7000;
+          font-size: 14px;
+          transition: var(--transition);}
+.nav-link:hover{color: var(--primary-color);}
+
+/*メインビジュアル*/
+.hero{height: 100vh;
+      background: linear-gradient(135deg,#e0e7ff 0%,#ffffff 100%);/*きれいなグラデ背景のはず*/
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 60px;}
+.hero-title{font-size: 40px;
+            margin-bottom: 15px;
+            font-weight: 700;}
+.highlight{font-size: 18px;
+           color: #64748b;
+           margin-bottom: 30px;}
+.hero-subtitle{font-size: 18px;
+               color: #64748b;
+               margin-bottom: 30px;}
+
+.but{display: inline-block;
+     padding: 12px 30px;
+     background-color: var(--primary-color);
+     color: var(--bg-white);
+     text-decoration: none;
+     border-radius: 30px;
+     font-weight: 700;
+     transition: var(--transition);
+     box-shadow: 0 4px 20px rgba(79,70,229,0.3);}
+.but:hover{background-color: var(--primar-light);
+           transform: translateY(-2px);
+           box-shadow: 0 6px 20px rgba(27, 27, 34, 0.4);}
+
+/*Aubout（私についてのページの見た目）*/
+.about-layou{display: flex;
+             align-items: center;
+             gap: 40px;}
+.about-image{width: 180px;
+             height: 180px; 
+             border-radius: 50%;  /*画面丸く切り抜く*/
+             object-fit: cover;
+             box-shadow: 0 5px 15px rgba(0,0,0,0,1);}
+.about-text h3{font-size: 22px;
+                margin-bottom: 15px;}
+.about-text p{margin-bottom: 10px;
+              color: #475569;}
+
+/*スキル一覧*/
+.skills-grid{display: flex;
+             justify-content: space-between;
+             gap: 20px;}
+.skills-card{background-color: var(--bg-white);
+             padding: 30px 20px;
+             border-radius: 10px;   
+             text-align: center;
+             width: 31%;
+             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+             transition: var(--transition);}
+.skills-card:hover{transform: translateY(-5px);
+                   box-shadow: 0 10px 20px rgba(0, 0,0, 0.1);}
+.skills-icon{font-size: 40px;
+             margin-bottom: 15px;}
+.skills-card h3{margin-bottom: 10px;
+                font-size: 18px;}
+.skills-card p{font-size: 14px;
+               color: #64748b;}
+
+/*Works（作品ギャラリー）*/
+.works-grid{display: flex;
+            gap: 30px;}
+.work-card{background-color: var(--bg-white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 40px 6px rgba(0, 0,0, 0.05);
+            width: 48%;
+            transition: var(--transition);}
+.work-card:hover{transform: translateY(-5px);
+                  box-shadow: 0 10px 20px rgba(0, 0,0, 0.1);}
+.work-image{width: 100%;
+            height: auto;
+            display: block;}
+.work-content{padding: 20px;}
+.work-content h3{margin-bottom: 10px;
+                 font-size: 18px;}
+.work-content p{font-size: 14px;
+                 color: #64748b;}
+
+/*お問い合わせ*/
+.contact-text{color: #cbd5e1;
+              margin-bottom: 30px;}
+.sns-links{display: flex;
+           justify-content: center;
+           gap: 15px;}
+.sns-btn{display: inline-block;
+         padding: 10px 24px;
+         background-color: rgba(255, 255, 255, 0.1);
+         color:var(--bg-white);
+         text-decoration: none;
+         border-radius: 5px;
+         font-weight: 700;
+         transition: var(--transition);
+         border: 1px solid rgba(255, 255, 255, 0.2);}
+.sns-btn:hover{background-color: var(--bg-white);
+               color: var(--bg-dark);}
+.mail-btn{background-color: var(--primary-color);
+          border-color: var(--primary-color);}
+.mail-btn:hover{background-color: var(--primar-light);
+                color: var(--bg-white);}
+
+.footer{background-color: #090d16;
+        color: #64748b;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 12px;}
+
+/*スマホ画面サイズ対応（レスポンシブデザイン）*/
+@media(max-width:768px) {
+.header-container{flex-direction: column;
+                    gap: 10px;}
+.about-layou{flex-direction: column;
+             text-align: center;}
+.skills-grid{flex-direction: column;
+             gap: 15px;}
+.skills-card{width: 100%;}
+.works-grid{flex-direction: column;
+            gap: 20px;}
+.work-card{width: 100%;}
+.hero-title{font-size: 32px;}
+}  
+ 
+      

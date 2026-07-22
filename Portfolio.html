@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">      
+  <!-- ホムペに非表示になるコメント入力➡ショートカットキーはCtrl+？キー -->
+     <head>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+       <title>My Portfolio</title>
+       <!-- ファビコン（月＆星のフリーアイコン、統一感あるよう色を#4f46e5に） -->
+        <link rel="icon" type="image/png" href="夜空のフリーアイコン.png">
+  <!-- グーグルからおしゃれなフォントをリンクしたよ -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Note+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSSファイル（STYLE.CSS）をリンク（Webデザインを適用） -->
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+     <!--ヘッダー（上部のナビゲーションメニュー） -->
+        <header class="header">
+           <div class="header-container">
+              <h1 class="logo">🌟My Portfolio🌟</h1>
+              <nav class="nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#works" class="nav-link">Works</a>
+                <a href="#contact" class="nav-link">Contact</a>
+              </nav>
+            </div>
+        </header>
+
+        <!--メインビジュアル（最初に表示される画面） -->
+        <section class="hero">
+          <div class="hero-content">
+             <h2 class="hero-title">Hello,I'm<span class="highlight">Yuyu</span></h2> 
+             <p class="hero-subtitle">HTML/CSSを学び始めて4日目でこのポートフォリオにチャレンジ中です！</p>
+             <p>ハロートレーニングにて３か月のクラスに通って学びました。</p>
+             <p>Ptoshop,Illustrator,Premiere Pro,HTML,CSS,JavaScript,
+                マーケティングと短期間でWebデザインについて体系的に学び中ました。</p>
+             <a href="#works" class="btn">作品を見る</a>
+          </div>
+        </section>
+        <!--私について（About） -->
+        <section id="about" class="section">
+          <div class="container">
+             <h2 class="section-title">About Me</h2>
+             <div class="about-layout">
+
+              <!-- プロフィール画像（現在は自動生成の仮画像！➡自分の顔イラストに変更予定） -->
+                <img src="https://picsum.photos/200" alt="プロフィール画像" class="about-image">
+                <div class="about-text">
+                    <h3>名前：Yuyu（ゆゆ）</h3>
+                    <p>webデザインとコーディング、動画編集も勉強中です。2026年5月から。</p>
+                    <p>Web制作は、TTML/CSSを中心に制作しています。</p>
+                    <p>ハロートレーニングでWeb制作の基礎を学び、学んだことを実際の制作に活かしながらスキルを磨いています。</p>
+                    <p>キャリアコンサルティングの勉強も並行中しています。2025年12月から。</p>
+                    <p>毎日新しい発見や気づきがあってワクワクしています！これから色々なwebサイトや動画を作れるようになるのが目標です。</p>
+                    <P>Web制作を学びながら、キャリア支援やクリエイティブな活動を通して、人の可能性を広げることも将来的に目指しています。</p>
+                    <p>HTML/CSS学習4日目からポートフォリオ制作に挑戦しました。</p>
+                    <p>完成したコードを使うだけでなく、1つずつのタグやコードの意味を理解しながら、自分の手で入力しています。
+                  <h3>制作の姿勢</h3>
+                    <p>分からないことをそのままにせず、1つずつ理解しながら積み重ねることを大切いしています。</p>
+                    <p>新しい技術を学び、できることを少しずつ増やしていきたいと考えています。</p>
+                  <h3>今後の目標</h3>
+                     <p>Web制作の知識を活かし、自分自身の活動を発信できるサイト制作や、訪れる方にとって分かりやすいWebページ作りを目指しています。</p>
+                     <p>キャリア×Web×クリエイティブな表現を組み合わせて、発信していきたいです。</p>
+                     <p>私らしさが見える表現になるといいなと考えています。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--スキル（今できること） -->
+          <section id="skills" class="section bg-light">
+            <div class="container">
+              <h2 class="section-title">Skills</h2>
+              <div class="skills-grid">
+                <div class="skills-card">
+                  <div class="skills-icon">★</div>
+                  <h3>HTML</h3>
+                  <p>Webページの入門的な骨組みを作成できます。</p>
+                  <p>見出し・文章作成・画像・リンクなど、基本的なマークアップを学びました。</p>
+                </div>
+                <div class="skills-card">
+                   <div class="skills-icon">★ </div>
+                  <h3>CSS</h3>
+                    <p>色や文字の装飾・余白調整・Flexboxを使ったレイアウト作成など、Webページの見た目を整える基本的な実装ができます。</p>
+                  </div>
+                <div class="skills-card">
+                  <div class="skills-icon">★ </div>
+                  <h3>Git/GitHub </H3>
+                  <p>これから勉強を続け、作った作品を公開していく予定です！！</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--作品集（Works）➡今後できている作品や新しく作成した作品を追加していく -->
+          <section id="Works" class="section">
+            <div class="container">
+              <h2 class="section-title">Works </h2>
+                <div class="Works-grid"></div>
+                 <!-- 作品１ -->
+                  <div class="Work-card">
+                    <p>今後作品を載せていきます！</p>
+                    <p> 現在表示されているのはイメージとなります。</p>
+                    <img src="https://picsum.photos/400/250?random=1" alt="作品１" class="Work-imge">
+                    <div class="Work-cotent">
+                      <!-- h3は作品タイトル -->
+                      <h3>作品タイトル </h3>
+                      <!-- pは作品の内容を説明　 -->
+                      <p>作品の内容を説明</p>
+                    </div>
+                  </div>
+                   <!-- 作品２ -->
+                    <div class="Work-card">
+                       <img src="https://picsum.photos/400/250?random=1" alt="作品１" class="Work-imge">
+                    <div class="Work-cotent">  
+                         <!-- h3は作品タイトル -->
+                      <h3>作品タイトル </h3>
+                      <!-- pは作品の内容を説明　 -->
+                      <p>作品の内容を説明</p>
+                    </div>
+                  </div>
+                  <!--  作品３ -->
+                    <div class="Work-card">
+                       <img src="https://picsum.photos/400/250?random=1" alt="作品１" class="Work-imge">
+                    <div class="Work-cotent">  
+                         <!-- h3は作品タイトル -->
+                      <h3>作品タイトル </h3>
+                      <!-- pは作品の内容を説明　 -->
+                      <p>作品の内容を説明</p>
+                    </div>
+                  </div>
+          </section>
+
+<!-- お問い合わせ（Contact） -->
+          <section id="contact" class="section bg-dark">
+            <div class="container text-center">
+              <h2 class="section-title text-white">Contact </h2>
+                <p class="contact-text">お仕事のご依頼やお問い合わせは、SNSのDMまたはメールからお気軽にご連絡ください！</p>
+                 <div class="sns-link">
+                   <a href=""></a>
+                   <a href=""></a>
+                 </div>
+             </div>   
+          </section>
+
+       <!-- フッター -->
+       <footer class="footer">
+          <p>&copy;2026 Yuyu. All Rights Reserved. </p>
+       </footer>      
+      
+    </body>
+    </html>
+                   
