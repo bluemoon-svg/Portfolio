@@ -176,11 +176,6 @@ body{font-family: 'Montserrat','NOte Sans JP',sans-serif;
 .sns-links{display: flex;
            justify-content: center;
            gap: 15px;}
-.youtube-btn{background-color: #ff0000 !important;/*YouTubeの赤色*/
-             color: #ffffff !important;
-             background-color: #ff0000 !important;}
-.youtube-btn:hover{background-color: #cc0000 !important;
-                   color: #ffffff !important;}
 .sns-btn{display: inline-block;
          padding: 10px 24px;
          background-color: rgba(255, 255, 255, 0.1);
@@ -190,13 +185,26 @@ body{font-family: 'Montserrat','NOte Sans JP',sans-serif;
          font-weight: 700;
          transition: var(--transition);
          border: 1px solid rgba(255, 255, 255, 0.2);}
+/*通常のホバー*/
 .sns-btn:hover{background-color: var(--bg-white);
                color: var(--bg-dark);}
-.mail-btn{background-color: var(--primary-color);
-          border-color: var(--primary-color);}
-.mail-btn:hover{background-color: var(--primar-light);
-                color: var(--bg-white);}
+/*各snsのホバー色*/
+.youtube-btn:hover{background-color: #ff0000 !important;
+             border-color: #ff0000 !important;
+             color: #ffffff !important;}
+             
+.insta-btn:hover{background-color: #e4405f !important;
+             border-color: #e4405f !important;
+             color: #ffffff !important;}
 
+.note-btn:hover{background-color: #2cb696 !important;
+             border-color: #2cb696 !important;
+             color: #ffffff !important;}
+
+.mail-btn:hover{background-color: var(--primary-color) !important;
+             border-color:var(--primary-color) !important;
+             color: #ffffff !important;}
+             
 .footer{background-color: #090d16;
         color: #64748b;
         text-align: center;
