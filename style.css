@@ -213,7 +213,7 @@ body{font-family: 'Montserrat','NOte Sans JP',sans-serif;
         font-size: 12px;}
 
 /*スマホ画面サイズ対応（レスポンシブデザイン）*/
-@media(max-width:1024px) {
+@media(max-width:768px) {
 .header-container{flex-direction: column;
                     gap: 10px;}
 .about-layou{flex-direction: column;
