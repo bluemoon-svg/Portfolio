@@ -75,7 +75,7 @@ body{font-family: 'Montserrat','NOte Sans JP',sans-serif;
 .nav-link:hover{color: var(--primary-color);}
 
 /*メインビジュアル*/
-.hero{min-height: 100vh;
+.hero{min-height: 100dvh;
       padding-top: 100px;
       padding-bottom: 60px;
       box-sizing: border-box;
